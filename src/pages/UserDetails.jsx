@@ -139,11 +139,13 @@ const UserDetails = () => {
               </ul>
             </div>
           </div>
-          <div>
-            <img
-              className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
-              src={`${user?.image}?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260`}
-              alt="user"
+          <div className="sm:pl-6 shadow-lg">
+            <Image
+              isZoomed
+              width={400}
+              height={400}
+              alt="NextUI Fruit Image with Zoom"
+              src={user?.image}
             />
           </div>
         </div>

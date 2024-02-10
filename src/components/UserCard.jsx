@@ -3,15 +3,15 @@ import { useNavigate } from "react-router-dom";
 const UserCard = ({ user }) => {
   const navigate = useNavigate();
   return (
-    <div className="md:w-[300px]  space-y-8 shadow-[0px_0px_30px_2px_rgba(100,100,111,0.1)] mt-8 relative p-8 rounded">
+    <div className="md:w-[300px] max-h-[400px]  space-y-8 shadow-[0px_0px_30px_2px_rgba(100,100,111,0.1)] mt-8 relative p-8 rounded">
       <div>
         <img
-          className="w-[60px] border h-[60px] object-cover rounded-full p-2 bg-slate-100 duration-300 hover:scale-105"
+          className="w-[60px] border h-[60px] object-cover rounded-full  bg-slate-100 duration-300 hover:scale-105"
           src={user?.image || "https://robohash.org/Terry.png?set=set4"}
           alt=""
         />
       </div>
-      <div className="space-y-4">
+      <div className="space-y-2">
         <h3 className="text-xl font-bold text-slate-800">
           {user?.firstName + " " + user?.lastName}
         </h3>
