@@ -1,29 +1,19 @@
-import {
-  Navbar,
-  NavbarBrand,
-  NavbarContent,
-  NavbarItem,
-  Link,
-} from "@nextui-org/react";
+import { Navbar, NavbarBrand } from "@nextui-org/react";
+import { Link } from "react-router-dom";
 
 export default function NavbarComponent() {
   return (
-    <Navbar>
+    <Navbar
+      style={{
+        display: "block",
+      }}
+      className="sm:px-8"
+    >
       <NavbarBrand>
-        <p className="font-bold text-inherit uppercase">Technofix</p>
+        <Link to="/">
+          <p className="font-bold uppercase">Technofix</p>
+        </Link>
       </NavbarBrand>
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Home
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page">
-            add user
-          </Link>
-        </NavbarItem>
-      </NavbarContent>
     </Navbar>
   );
 }

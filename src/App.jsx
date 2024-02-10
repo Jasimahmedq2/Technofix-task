@@ -1,11 +1,14 @@
 import "./App.css";
 import MainLayaout from "./Layout/MainLayaout";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
-    <div className="flex gap-3 items-center">
+    <>
       <MainLayaout />
-    </div>
+      <ToastContainer />
+    </>
   );
 }
 
