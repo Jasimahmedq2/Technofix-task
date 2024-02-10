@@ -1,10 +1,10 @@
 ## Technofix-task
+- ## Live: https://technofix-jasim.netlify.app/
 
 ## technologies
 - Reactjs
 - TailwindCss,
 - NextUi
-- vite
 
 ## Process to run the website locally
 - clone the repository `git clone repository link`
